@@ -106,7 +106,7 @@ W(fT("CUPON_DESCUENTO","Descuento del cupón de bienvenida","Ejemplo: 10%"),hasF
 ["6. Diseño",[fS("ESTILO","Estilo que buscas",["Elegante","Moderno","Familiar y cálido","Rústico","Todavía no sé"]),fT("COLORES","Colores de tu marca","Nombres o códigos. Si no tienes, dime cuáles te gustan"),fS("LOGO","¿Tienes logo?",["Sí, en buena calidad","Sí, pero en baja calidad","No"]),fT("FOTOS_LINK","Link de tus fotos","Carpeta de Google Drive abierta para ver. O mándalas por WhatsApp"),fC("FOTOS_TIPOS","Fotos que tienes",["Fachada","Interior","Productos o trabajos","Equipo","Eventos"]),fT("VIDEO","Video","Link, o escribe: no tengo"),fA("REFERENCIAS","Páginas que te gustan","Links y qué te gusta de cada una")]],
 ["7. Últimos detalles",[fS("IDIOMA","Idioma del sitio",["Español","Español e inglés"]),fA("NOTAS","Algo más que debamos saber","Cualquier cosa que quieras que destaquemos")]]];
 
-var NAMES=["Negocio","Contacto","Redes","Oferta","Página","Diseño","Detalles","Resumen"],V=load("intake-v3",{}),UI=load("intake-ui2",{m:"ess",s:0});
+var NAMES=["Negocio","Contacto","Redes","Oferta","Página","Diseño","Detalles","Resumen"],V=load("intake-v3",{}),UI=load("intake-ui2",{m:"full",s:0});
 var ARROW='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',BACK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>';
 function sv(){save("intake-v3",V)}
 function filled(f){var v=V[f[0]];return Array.isArray(v)?v.length>0:!!(v&&String(v).trim())}
